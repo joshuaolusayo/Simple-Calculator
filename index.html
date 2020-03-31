@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>CALCULATOR</h1>
+    </div>
+    <div class="container">
+        <div class="screen">
+            <input type="text" id="displayScreen"  >
+        </div>
+        <div class="centerBtn">
+            <button value="on" onclick="switchOn()">ON</button>
+            <button value="off" onclick="switchOff()">OFF</button>
+        </div>
+        <div>
+            <button value="√(" onclick="displayNum(this.value)">√∆</button>
+            <button value="%" onclick="displayNum(this.value)">%</button>
+            <button value="^(-1)" onclick="displayNum(this.value)">x<sup>-1</sup></button>
+            <button value="log(" onclick="displayNum(this.value)">log</button>
+            <button value="In(" onclick="displayNum(this.value)">In</button>
+        </div>
+        <div>
+            <button value="(" onclick="displayNum(this.value)">(</button>
+            <button value=")" onclick="displayNum(this.value)">)</button>
+            <button value="sin(" onclick="displayNum(this.value)">sin</button>
+            <button value="cos(" onclick="displayNum(this.value)">cos</button>
+            <button value="tan(" onclick="displayNum(this.value)">tan</button>
+        </div>
+        <div>
+            <button value="7" onclick="displayNum(this.value)">7</button>
+            <button value="8" onclick="displayNum(this.value)">8</button>
+            <button value="9" onclick="displayNum(this.value)">9</button>
+            <button value="del" onclick="backspace()">DEL</button>
+            <button value="AC" onclick="clearScreen()">AC</button>
+        </div>
+        <div>
+            <button value="4" onclick="displayNum(this.value)">4</button>
+            <button value="5" onclick="displayNum(this.value)">5</button>
+            <button value="6" onclick="displayNum(this.value)">6</button>
+            <button value="*" onclick="displayNum(this.value)">X</button>
+            <button value="/" onclick="displayNum(this.value)">/</button>
+        </div>
+        <div>
+            <button value="1" onclick="displayNum(this.value)">1</button>
+            <button value="2" onclick="displayNum(this.value)">2</button>
+            <button value="3" onclick="displayNum(this.value)">3</button>
+            <button value="+" onclick="displayNum(this.value)">+</button>
+            <button value="-" onclick="displayNum(this.value)">-</button>
+        </div>
+        <div>
+            <button value="0" onclick="displayNum(this.value)">0</button>
+            <button value="." onclick="displayNum(this.value)">.</button>
+            <button value="e" onclick="displayNum(this.value)">x10<sup>x</sup></button>
+            <button id="prevAns" value="Ans" onclick="previousAns()">Ans</button>
+            <button value="=" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Joshua Oyeleke © 2020 || +2348163087542</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
